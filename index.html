@@ -131,7 +131,7 @@
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
     const background = new Image();
-    background.src = "https://drive.google.com/file/d/1Ko3GJrYP7X-fp6iubXP7ay2wgkUUFhTI/view?usp=sharing"; // 
+    background.src = "1.svg"; // 
 
     let objects = [];
     let isDrawing = false;
@@ -156,11 +156,6 @@
     const moveToggleButton = document.getElementById("move-toggle-btn");
     const resizeToggleButton = document.getElementById("resize-toggle-btn");
     const drawToggleButton = document.getElementById("draw-toggle-btn");
-
-    // Initial Background Setup
-    background.onload = () => {
-        ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-    };
 
     // Redraw Canvas
     const redrawCanvas = () => {
